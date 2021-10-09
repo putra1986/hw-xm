@@ -38,7 +38,7 @@ const starts = async (Haikal = new WAConnection()) => {
         fs.writeFileSync('./session.json', JSON.stringify(Haikal.base64EncodedAuthInfo(), null, '\t'))
        
 //=================================================//
-/*
+//KHUSUS HEROKU\\ //KALAU MAKE TERMUX MATIIN DI BAWAH INI YE\\
 Haikal.on('group-participants-update', async (anu) => {
 	try {
 		const mdata = await Haikal.groupMetadata(anu.jid)
@@ -228,7 +228,7 @@ ${mdata.subject}'
 		console.log(e)
 	}
 	}) 
-	*/
+
 //=================================================//
 
 Haikal.on('chat-update', async (message) => {
